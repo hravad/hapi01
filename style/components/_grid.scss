@@ -1,0 +1,217 @@
+
+//
+// - Generic layout classes --------------------------------/
+
+.relative {position: relative !important;}
+.show-block { display: block !important;}
+.show-grid { display: flex !important;}
+.hide { display: none !important; }
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.float-left { float: left; }
+.float-right { float: right; }
+.nowrap { white-space: nowrap; }
+
+%clearfix {
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+}
+.clearfix {
+  @extend %clearfix;
+}
+
+//
+// - Define grid for all ------------------------------------/
+
+%gd, .gd {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gd-row { flex-direction: row; }
+.gd-reverse { flex-direction: row-reverse; }
+.gd-column { flex-direction: column; }
+.gd-column-reverse { flex-direction: column-reverse; }
+.gd-nowrap { flex-flow: nowrap;  }
+.gd-center { align-items: center; }
+.gd-justify-center { justify-content: center; }
+.gd-justify-end { justify-content: flex-end; }
+.cl { flex: 1;  }
+.collapsefix { flex-basis: auto;  }
+.flex-cells > .cl {
+  display: flex;
+  width: 100%;
+}
+.cl-content { width: 100%; }
+
+@for $i from 1 through $gridColsTotal {
+
+  $size: 100 / 12% * $i *1%;
+
+  .gd#{$i} {
+    > .cl {
+      flex: 0 0 $size;
+      max-width: $size;
+    }
+  }
+  .cl#{$i} {
+    width: $size !important;
+    max-width: $size !important;
+    flex: none !important;
+  }
+}
+.cl-auto {
+  flex: auto !important;
+  max-width: 100% !important;
+}
+.cl-collapse {
+  flex-grow: 0 !important;
+  overflow: visible !important;
+}
+.noflex {
+  flex: none !important;
+}
+.cl-neg-order {
+  order: -1;
+}
+.cl-fill {
+  flex: 1 !important;
+  max-width: none !important;
+}
+
+//
+// - Define gutters ----------------------------------------/
+
+@each $size in $guttersSizes {
+  $value: map-get($guttersMap, $size);
+  .gd-gtrs-#{$size} {
+    margin-left: -$value;
+    margin-top: -$value;
+    > .cl {
+      padding-left: $value;
+      padding-top: $value;
+    }
+  }
+  .gd-gtrs-x-#{$size} {
+    margin-left: -$value;
+    > .cl {
+      padding-left: $value;
+    }
+  }
+  .gd-gtrs-y-#{$size} {
+    margin-top: -$value;
+    > .cl {
+      padding-top: $value;
+    }
+  }
+}
+
+//
+// - Define grid for breakpoints -------------------------------/
+
+// loop throung breakpoints
+@each $breakpoint in map_keys($gridBreakpoints) {
+
+  // define grid for breakpoint
+
+  $value: map_get($gridBreakpoints, $breakpoint);
+
+  @media #{$value} {
+
+    .#{$breakpoint}-relative {position: relative !important;}
+    .#{$breakpoint}-show-block { display: block !important;}
+    .#{$breakpoint}-show-grid { display: flex !important;}
+    .#{$breakpoint}-hide { display: none !important; }
+    .#{$breakpoint}-text-center {text-align: center;}
+    .#{$breakpoint}-text-right {text-align: right;}
+
+    .#{$breakpoint}-gd {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .#{$breakpoint}-gd-row { flex-direction: row; }
+    .#{$breakpoint}-gd-reverse { flex-direction: row-reverse; }
+    .#{$breakpoint}-gd-column { flex-direction: column; }
+    .#{$breakpoint}-gd-column-reverse { flex-direction: column-reverse; }
+    .#{$breakpoint}-block { display: block; }
+    .#{$breakpoint}-no-cl { flex: initial; }
+    .#{$breakpoint}-gd-center { align-items: center; }
+    .#{$breakpoint}-cl-content { width: 100%; }
+    .#{$breakpoint}-cl-neg-order { order: -1; }
+
+    @for $i from 1 through $gridColsTotal {
+      $size: 100/12*$i * 1%;
+      .#{$breakpoint}-gd#{$i} {
+        > .cl {
+          flex: 0 0 $size;
+          max-width: $size;
+        }
+      }
+      .#{$breakpoint}-cl#{$i} {
+        width: $size !important;
+        max-width: $size !important;
+        flex: none !important;
+      }
+    }
+
+    @each $size in $guttersSizes {
+      $value: map-get($guttersMap, $size);
+      .#{$breakpoint}-gd-gtrs-#{$size} {
+        margin-left: -$value;
+        margin-top: -$value;
+        > .cl {
+          padding-left: $value;
+          padding-top: $value;
+        }
+      }
+      .#{$breakpoint}-gd-gtrs-x-#{$size} {
+        margin-left: -$value;
+        > .cl {
+          padding-left: $value;
+        }
+      }
+      .#{$breakpoint}-gd-gtrs-y-#{$size} {
+        margin-top: -$value;
+        > .cl {
+          padding-top: $value;
+        }
+      }
+    }
+
+  }
+}
+
+//
+// - Define wrappers ---------------------------------------/
+
+.page-constrain {
+  @media (min-width: 1684px) { padding: 0 calc(50% - 780px); }
+  @media (max-width: 1683px) and (min-width: 1400px) { padding: 0 4.5%; }
+  @media (max-width: 1399px) and (min-width: 961px) { padding: 0 4.5%; }
+  @media (max-width: 960px) and (min-width: 721px) { padding: 0 4%; }
+  @media (max-width: 720px) { padding: 0 1rem; }
+}
+.page-constrain-more {
+  @media (min-width: 1684px) { padding: 0 calc(50% - 650px); }
+  @media (max-width: 1683px) and (min-width: 1400px) { padding: 0 10%; }
+  @media (max-width: 1399px) and (min-width: 961px) { padding: 0 7%; }
+  @media (max-width: 960px) and (min-width: 721px) { padding: 0 6%; }
+  @media (max-width: 720px) { padding: 0 1rem; }
+}
+
+@media #{$mediaMedium} {
+  .medium-no-constrain {
+    padding: 0;
+  }
+}
+
+@media #{$mediaSmall} {
+  .small-no-constrain {
+    padding: 0;
+  }
+}
+

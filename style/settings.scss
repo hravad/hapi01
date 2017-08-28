@@ -1,0 +1,203 @@
+
+
+// 00. Global color and style  -------------------------------------------------------------------------------///
+
+
+$bodyBg: #f5f5f5;
+
+$themeColor1: #373737;
+$themeColor2: #d4d4d4;
+
+$themeColor1Lighter: lighten($themeColor1, 5%);
+$themeColor2Lighter: lighten($themeColor2, 5%);
+
+$themeColor1Darker: darken($themeColor1, 5%);
+$themeColor2Darker: darken($themeColor2, 5%);
+
+$bgColor1: #efefef;
+$bgColor2: #c8c2b6;
+
+$bgDark1: #808080;
+$bgDark2: #3d3d3d;
+$bgDark3: #232323;
+
+/////
+
+$darkBgColor: #211f1f;
+
+$textColorDark: #000;
+$textColorDark2: #111;
+
+$textColor: #222;
+$textColorLight: #636363;
+$textColorLighter: #949292;
+$textColorAttention: #f33c54;
+$warningColor: #f33c54;
+//$successColor: #82eba7;
+$successColor: #5ee695;
+$actionColor: #4b4947;
+$actionColor: $bgDark3;
+$confirmColor: #587f95;
+//$actionColor: #73a5c1;
+
+$headerColor: $textColorDark;
+$linkColor: $themeColor1;
+$mainHeaderBg: #fff;
+$mainFooterBg: $bgDark2;
+$mainLogoWidth: auto;
+
+$primaryBoxShadow: 0 0 5px rgba(0, 0, 0, 0.19);
+$primaryBorderColor: #E0DFDC;
+$darkBorderColor: #9c9c9c;
+$primaryBorder: 1px solid $primaryBorderColor;
+$darkBorder: 1px solid $darkBorderColor;
+
+$mainContentPadding: null;
+$mainContentTopPadding: 6rem;
+$mainContentBottomPadding: 6rem;
+
+$inputBackground: #fafafa;
+$inputBorderColor: #ebebeb;
+
+
+.fill-bg-1 {
+  background: $bgColor1;
+}
+.fill-bg-2 {
+  background: $bgColor2;
+}
+.fill-theme-1 {
+  background: $themeColor1;
+  color: #fff;
+}
+.fill-theme-2 {
+  background: $themeColor2;
+  color: #fff;
+}
+.fill-dark1 {
+  background: $bgDark1;
+  color: #fff;
+}
+
+$primaryBoxShadow: 0 0 5px rgba(0, 0, 0, 0.19);
+$shadow1: 0 1px 2px 0 #484848;
+$shadow2: 0 0 33px rgba(0, 0, 0, 0.21);
+
+// 01. Typography  --------------------------------------------------------------------------------------///
+
+
+$primaryFont: 'Open Sans', sans-serif;
+$primaryFont: 'Open Sans', sans-serif;
+$secondaryFont: 'Merriweather', sans-serif;
+$secondaryFont: 'PT Serif', sans-serif;
+$thirdFont: 'itw', sans-serif;
+
+$bodyFontSize: 1.4rem;
+
+h1, h2, h3, h4  {
+  font-family: $secondaryFont;
+  font-weight: 500;
+}
+h2, .h2 {
+  font-size: 3.6rem;
+}
+
+
+// 02. Grid and breakpoints  -------------------------------------------------------------------------------///
+
+
+//Set total amount of columns
+$gridColsTotal: 12;
+
+$mediaMediumStart: '721px';
+$mediaMediumEnd: '960px';
+
+//Define all breakpoints
+$mediaSmall: '(max-width: #{$mediaMediumStart})';
+$mediaMediumBelow: '(max-width: #{$mediaMediumEnd})';
+$mediaMedium: '(max-width: #{$mediaMediumEnd}) and (min-width: #{$mediaMediumStart})';
+$mediaMediumUp: '(min-width: #{$mediaMediumStart})';
+$mediaLarge: '(min-width: #{$mediaMediumEnd})';
+
+////Define grid breakpoints
+//$gridBreakpoints: (small medium large);
+
+//Map defined grid breakpoints
+$gridBreakpoints: (
+    sm: $mediaSmall,
+    md: $mediaMedium,
+    lg: $mediaLarge
+);
+
+//Define gutter sizes
+$guttersSizes: (
+  xxxxn
+  xxxn
+  xxn
+  xn
+  n
+  xn
+  xxn
+  xxxn
+);
+
+//Map defined gutter sizes
+$guttersMap: (
+    xxxxn: .1rem,
+    xxxn: .2rem,
+    xxn: .5rem,
+    xn: 1.2rem,
+    n: 2rem,
+    nx: 3.5rem,
+    nxx: 4rem,
+    nxxx: 4.5rem
+);
+
+
+// 03. Main navigation  -------------------------------------------------------------------------------///
+
+
+
+// 04. Forms  --------------------------------------------------------------------------------------///
+
+
+
+// 05. Filter  --------------------------------------------------------------------------------------///
+
+
+
+// 05. Product Item --------------------------------------------------------------------------------------///
+
+
+
+
+
+// 05 b. Product Page  --------------------------------------------------------------------------------------///
+
+
+
+// default accordion styling
+
+
+// - Cart -----------------------------------------------------------//
+
+
+// - Typography -----------------------------------------------------------//
+
+
+// - Tables ----------------------------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

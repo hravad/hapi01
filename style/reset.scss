@@ -1,0 +1,57 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font: 62.5%/1.5 sans-serif;
+  height: 100%;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+}
+html * {max-height:1000000px;}
+body {
+  min-height:100%;
+  font-size: $bodyFontSize;
+  font-family: $primaryFont;
+  color: $textColor;
+  position: relative;
+}
+img {
+  border: none;
+}
+
+iframe {
+  display: block;
+  border: none;
+}
+
+.main { min-height: 100%; }
+.grid, .cell, div, ul, li, section, article, header, a, p, nav, form, input, select, fieldset, footer {
+  box-sizing: border-box;
+}
+
+main, article, section, form, fieldset {
+  display: block;
+}
+ul,li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a { text-decoration: none;}
+p {
+  margin: 0 0 1em;
+  font-size: 1em;
+}
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+

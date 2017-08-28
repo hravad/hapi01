@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" class="{{#if htmlClass}}{{inserts 'htmlClass'}}{{/if}}">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{site 'title'}}</title>
+  {{> head-user}}
+</head>
+
+<body class="{{#if bodyClass}}{{inserts 'bodyClass'}}{{/if}}">
+<main>
+  {{{content}}}
+</main>
+
+{{> footer-user}}
+{{> tail-user}}
+
+</body>
+</html>

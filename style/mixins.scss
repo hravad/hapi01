@@ -1,0 +1,394 @@
+$textInputSelectors:
+'[type="text"],
+[type="password"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="month"],
+[type="week"],
+[type="email"],
+[type="number"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="url"],
+[type="color"]';
+
+$btnSelectors:
+'.btn,
+button,
+[type="submit"]';
+
+%grab {
+  cursor: grab !important;
+  cursor: -moz-grab !important;
+  cursor: -webkit-grab !important;
+}
+
+%grabbing {
+  cursor: grabbing !important;
+  cursor: -moz-grabbing !important;
+  cursor: -webkit-grabbing !important;
+}
+
+@mixin appearance ($value) {
+  -webkit-appearance: $value;
+  -moz-appearance: $value;
+  -ms-appearance: $value;
+  appearance: $value;
+}
+@mixin user-select($value) {
+  -moz-user-select: $value;
+  -webkit-user-select: $value;
+  -ms-user-select: $value;
+}
+@mixin boxShadow($type) {
+  @if($type == default or $type == primary) {
+    box-shadow: $primaryBoxShadow;
+  }@else if($type == none) {
+    box-shadow: none;
+  }@else if($type == null) {
+
+  }@else {
+    box-shadow: $type;
+  }
+}
+@mixin link (
+  $display: null,
+  $padding: null,
+  $color: null,
+  $background: null,
+  $lineHeight: null,
+  $textDecoration: null,
+  $textTransform: null,
+  $whiteSpace: null,
+  $fontSize: null,
+  $fontWeight: null,
+
+  $hoverColor: null,
+  $hoverBackground: null,
+  $hoverTextDecoration: null,
+
+  $activeColor: null,
+  $activeBackground: null,
+  $activeTextDecoration: null
+) {
+  display: $display;
+  padding: $padding;
+  color: $color;
+  background: $background;
+  line-height: $lineHeight;
+  text-decoration: $textDecoration;
+  text-transform: $textTransform;
+  white-space: $whiteSpace;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  &:hover {
+    color: $hoverColor;
+    background: $hoverBackground;
+    text-decoration: $hoverTextDecoration;
+  }
+  &:active {
+    color: $activeColor;
+    background: $activeBackground;
+    text-decoration: $activeTextDecoration;
+  }
+}
+@mixin placeholder($this:null) {
+  @if($this) {
+    &::-webkit-input-placeholder { @content }
+    &:-moz-placeholder { @content }
+    &::-moz-placeholder { @content }
+    &:-ms-input-placeholder { @content }
+  }
+  @else{
+    ::-webkit-input-placeholder {@content}
+    :-moz-placeholder           {@content}
+    ::-moz-placeholder          {@content}
+    :-ms-input-placeholder      {@content}
+  }
+}
+
+@mixin btnFactory(
+  $background:#222,
+  $color:#fff,
+  $outline: 0 none,
+  $height: null,
+  $textTransform: null,
+  $font: $primaryFont,
+  $fontWeight: 600,
+  $fontSize: null,
+  $padding:null,
+  $borderColor:$background,
+  $borderStyle: solid,
+  $borderWidth:1px,
+  $border: $borderWidth $borderStyle $borderColor,
+  $borderRadius: null,
+  $hoverBackground:saturate(lighten($background, 5%), 5%),
+  $hoverColor:#fff,
+  $hoverBorder:null
+) {
+  cursor: pointer;
+  outline: $outline;
+  border: $border;
+  height: $height;
+  border-radius: $borderRadius;
+  background: $background;
+  color: $color;
+  font-family: $font;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  padding: $padding;
+  text-transform: $textTransform;
+  &:hover {
+    background: $hoverBackground;
+    color: $hoverColor;
+  }
+  &:before, i {
+    color: inherit;
+  }
+
+  &.hollow {
+    color: $background;
+    background: $color;
+    border-color: $background;
+    &:hover {
+      background: $hoverBackground;
+      color: $hoverColor;
+    }
+    &:before, i {
+      color: $color;
+    }
+  }
+  &.warning {
+    color: #fff;
+    background: $warningColor;
+    border-color: $warningColor;
+    &:hover,
+    &:focus {
+      background: saturate(lighten($warningColor,8%),30%)
+    }
+    &:active {
+      background: saturate(darken($warningColor,5%),5%)
+    }
+  }
+  &.action {
+    $background: $actionColor;
+    $hoverBackground: saturate(lighten($actionColor,8%),2%);
+    color: #fff;
+    background: $actionColor;
+    border-color: $actionColor;
+    &:hover,
+    &:focus {
+      background: saturate(lighten($actionColor,8%),2%)
+    }
+    &:active {
+      background: saturate(darken($actionColor,5%),5%)
+    }
+    &.hollow {
+      color: $background;
+      background: $color;
+      border-color: $background;
+      &:hover {
+        background: $hoverBackground;
+        color: $hoverColor;
+        &:before, i {
+          color: #fff;
+        }
+      }
+      &:before, i {
+        color: $background;
+      }
+    }
+
+  }
+  &.confirm {
+    color: #fff;
+    background: $confirmColor;
+    border-color: $confirmColor;
+    &:hover,
+    &:focus {
+      background: saturate(lighten($confirmColor,8%),2%)
+    }
+    &:active {
+      background: saturate(darken($confirmColor,5%),5%)
+    }
+  }
+  &.success {
+    color: #fff;
+    background: $successColor;
+    border-color: $successColor;
+    &:hover {
+      background: lighten($successColor,5%)
+    }
+  }
+}
+
+// - Checkbox + radio  ---------------------------------------------/
+
+@mixin radioCheck($checked:false) {
+  background: #fff;
+  @if($checked == false) {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 1.2em;
+    height: 1.2em;
+    border: $inputCheckBorder;
+    margin: $inputCheckMargin;
+    outline: none;
+  } @else {
+    box-shadow: 0 0 0 .3rem #ffffff inset, 0 0 12px 9px $themeColor1 inset;
+  }
+}
+
+// - Form ---------------------------------------------/
+
+@mixin formFactory(
+  $inputPadding: null,
+  $inputHeight: null,
+  $inputBorder: none,
+  $inputBackground: #fff,
+  $inputFontSize: inherit,
+  $inputFontWeight: inherit,
+  $inputFont: $primaryFont,
+  $inputColor: $textColor,
+  $booleanBackground: #fff,
+  $booleanCheckColor: $themeColor1,
+  $booleanSize: 3rem,
+  $hideNumberArrows: true,
+  $placeholderColor: lighten($inputColor, 50%),
+  $autoFillBg: #fff
+) {
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 100px $autoFillBg inset;
+  }
+  @include placeholder(true) {
+    color:#{$placeholderColor}
+  }
+
+  .form-control {
+    &.required {
+      label:after {
+        content: ' *';
+        font-weight: 700;
+        color: $warningColor;
+      }
+    }
+    > #{$textInputSelectors} {
+      border: $inputBorder;
+      padding: $inputPadding;
+      height: $inputHeight;
+      background: $inputBackground;
+      font-family: $inputFont;
+      font-size: $inputFontSize;
+      font-weight: $inputFontWeight;
+      width: 100%;
+      color: $inputColor;
+    }
+    > .select-element {
+      width: 100%;
+      height: $inputHeight;
+      background: $inputBackground;
+      position: relative;
+      border: $inputBorder;
+      //todo: clean up
+      &:after {
+        pointer-events: none;
+        @include selectIcon;
+      }
+      > select {
+        background: $inputBackground;
+        font-family: $inputFont;
+        font-size: $inputFontSize;
+        font-weight: $inputFontWeight;
+        padding: $inputPadding;
+        min-width: 100%;
+        height: $inputHeight;
+        background: $inputBackground;
+
+        > .blank-option {
+          color: $placeholderColor;
+        }
+      }
+    }
+    > #{$btnSelectors} {
+      height: $inputHeight;
+      width: 100%;
+    }
+    > textarea {
+      box-sizing: border-box;
+      border: $inputBorder;
+      background: $inputBackground;
+      padding: $inputPadding;
+    }
+  }
+  @if($hideNumberArrows) {
+    input[type='number'] {
+      -moz-appearance:textfield;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+
+  [type="checkbox"], [type="radio"] {
+    display: none;
+    + label {
+      cursor: pointer;
+      &:before {
+        content: '';
+        @include radioCheck;
+        border: $inputBorder;
+      }
+    }
+    &:checked + label:before {
+      @include radioCheck(true);
+    }
+  }
+  [type="radio"] + label:before {border-radius: 50%;}
+
+  .dropzone {
+    //background: $inputBackground !important;
+  }
+
+  @content;
+}
+
+@mixin dot(
+  $size:null,
+  $background:null,
+  $border-radius:50%
+) {
+  width: $size;
+  height: $size;
+  background: $background;
+  border-radius: $border-radius;
+}
+
+@mixin bulletBefore($size:4px, $color: #000) {
+  &:before {
+    content: '';
+    background: $color;
+    line-height: 1em;
+    height: $size;
+    width: $size;
+    position: relative;
+    top: -.1em;
+    margin-right: .6em;
+    display: inline-block;
+    vertical-align: middle;
+    @content;
+  }
+}
+
+@mixin pseudoFill {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
