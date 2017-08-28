@@ -50,7 +50,7 @@
 
 @for $i from 1 through $gridColsTotal {
 
-  $size: 100 / 12% * $i *1%;
+  $size: 100 / 12 * $i *1%;
 
   .gd#{$i} {
     > .cl {
@@ -163,20 +163,20 @@
       .#{$breakpoint}-gd-gtrs-#{$size} {
         margin-left: -$value;
         margin-top: -$value;
-        > .cl {
+        > .cell {
           padding-left: $value;
           padding-top: $value;
         }
       }
       .#{$breakpoint}-gd-gtrs-x-#{$size} {
         margin-left: -$value;
-        > .cl {
+        > .cell {
           padding-left: $value;
         }
       }
       .#{$breakpoint}-gd-gtrs-y-#{$size} {
         margin-top: -$value;
-        > .cl {
+        > .cell {
           padding-top: $value;
         }
       }

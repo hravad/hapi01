@@ -1,8 +1,14 @@
 
 <!-- Scripts -->
 
-<link rel="stylesheet" href="/style/app.css">
-<script src="/script/app.js"></script>
+{{#each files.head}}
+  {{#if script}}
+    <script src="{{{script}}}"/></script>
+  {{/if}}
+  {{#if link}}
+    <link href="{{{link}}}" rel="{{{rel}}}"/>
+  {{/if}}
+{{/each}}
 
 <!-- Other links-->
 
