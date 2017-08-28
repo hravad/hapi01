@@ -1,0 +1,22 @@
+{
+  "name": "hapi1",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "hapi1"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.0.10",
+    "hapi": "^16.5.2",
+    "hapi-sass": "^2.3.1",
+    "inert": "^4.2.1",
+    "vision": "^4.1.1"
+  }
+}

@@ -1,0 +1,9 @@
+<p>partial.html</p>
+<h3>Item List</h3>
+{{#listItems items}}
+    <span>{{id}}</span>
+    <span>{{name}}</span>
+    {{#if price}}
+    <span>{{price}} $</span>
+    {{/if}}
+{{/listItems}}

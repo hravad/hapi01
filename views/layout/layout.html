@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{site 'title'}}</title>
+    <link rel="stylesheet" href="style/app.css">
+    <script src="script/app.js"></script>
+</head>
+<body class="{{#if bodyClass}}{{inserts 'bodyClass'}}{{/if}}">
+<h1>layout.html</h1>
+<p>help.js says: {{help 'spanish'}}</p>
+{{{content}}}
+
+</body>
+</html>
