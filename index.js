@@ -11,15 +11,7 @@ const Handlebars = require('handlebars');
 
 
 server.connection({
-    port: (function() {
-        var port;
-        try{
-            port = prosess.env.PORT
-        }catch (err){
-            port = 3000
-        }
-        return port
-    })()
+    port: process.env.PORT || 3000
 });
 
 var sassOptions = {
