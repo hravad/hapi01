@@ -2,36 +2,62 @@
 @mixin formControl() {
   $h: 6rem;
   $s: "input, select, textarea";
+  $pad: $h/4;
 
-  .form-control {
-    > input {
+  #{$s} {
+    @include placeholder(true) {
+      color: #fff;
+    }
+  }
+  
+  .fc {
+    > input, select {
       width: 100%;
       height: $h;
-      padding-left: $h/4;
-      padding-right: $h/4;
+      padding-left: $pad;
+      padding-right: $pad;
     }
     > textarea {
       width: 100%;
+      padding-left: $pad;
+      padding-right: $pad;
+      padding-top: calc(#{$h} - 2em);
+      min-height: 8em;
     }
+  }
+  
+  .btn {
+    height: $h;
+    padding-left: $pad;
+    padding-right: $pad;
   }
 
   .inline-labels {
-    .form-control {
+    .fc {
       position: relative;
 
       #{$s} {
-        padding-top: calc(#{$h} - 3em);
+        transition: color .3s;
+        &:not(textarea) {
+          padding-top: calc(#{$h} - 3em);
+        }
 
         &[value=""] {
           +label {
-            top: 50%;
+            top: 2.1em;
             font-size: 1em;
             color: inherit;
           }
+          &:focus {
+            @include placeholder(true) {
+              color: #ccc;
+            }
+          }
         }
+        
         &:focus{
           +label {
-            top: 30%;
+            top: 1.5em;
             font-size: .8em;
             transition: all .2s;
             color: #999;
@@ -41,8 +67,8 @@
 
       label {
         transition: all .3s;
-        top: 30%;
-        left: $h/4;
+        top: 1.5em;
+        left: $h/4.5;
         line-height: 1;
         font-size: .8em;
         position: absolute;

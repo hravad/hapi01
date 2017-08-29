@@ -7,7 +7,7 @@ html {
 html, body {
   padding: 0;
   margin: 0;
-  //-webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
 }
 html * {max-height:1000000px;}
 body {
@@ -20,18 +20,26 @@ body {
 img {
   border: none;
 }
-input, textarea, label {
+input, textarea, label, select, button {
   font-family: $primaryFont;
   border: none;
   outline: none;
+}
+button {
+  cursor: pointer;
 }
 iframe {
   display: block;
   border: none;
 }
+label {
+  display: block;
+  text-align: left;
+  min-height: 2em;
+}
 
 .main { min-height: 100%; }
-.grid, .cell, div, ul, li, section, article, header, a, p, nav, form, input, select, fieldset, footer {
+* {
   box-sizing: border-box;
 }
 

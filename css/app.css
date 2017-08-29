@@ -1,57 +1,58 @@
-/* line 1, C:/Users/havard/nodeprojects/hapi/style/components/_testcomponent.scss */
+/* line 1, D:/gitNode/hapi01/style/components/_testcomponent.scss */
 h1 {
   font-weight: 100 !important;
   font-size: 40px; }
 
-/* line 63, C:/Users/havard/nodeprojects/hapi/style/settings.scss */
+/* line 63, D:/gitNode/hapi01/style/settings.scss */
 .fill-bg-1 {
   background: #efefef; }
 
-/* line 66, C:/Users/havard/nodeprojects/hapi/style/settings.scss */
+/* line 66, D:/gitNode/hapi01/style/settings.scss */
 .fill-bg-2 {
   background: #c8c2b6; }
 
-/* line 69, C:/Users/havard/nodeprojects/hapi/style/settings.scss */
+/* line 69, D:/gitNode/hapi01/style/settings.scss */
 .fill-theme-1 {
   background: #373737;
   color: #fff; }
 
-/* line 73, C:/Users/havard/nodeprojects/hapi/style/settings.scss */
+/* line 73, D:/gitNode/hapi01/style/settings.scss */
 .fill-theme-2 {
   background: #d4d4d4;
   color: #fff; }
 
-/* line 77, C:/Users/havard/nodeprojects/hapi/style/settings.scss */
+/* line 77, D:/gitNode/hapi01/style/settings.scss */
 .fill-dark1 {
   background: #808080;
   color: #fff; }
 
-/* line 97, C:/Users/havard/nodeprojects/hapi/style/settings.scss */
+/* line 97, D:/gitNode/hapi01/style/settings.scss */
 h1, h2, h3, h4 {
   font-family: "PT Serif", sans-serif;
   font-weight: 500; }
 
-/* line 101, C:/Users/havard/nodeprojects/hapi/style/settings.scss */
+/* line 101, D:/gitNode/hapi01/style/settings.scss */
 h2, .h2 {
   font-size: 3.6rem; }
 
-/* line 1, C:/Users/havard/nodeprojects/hapi/style/reset.scss */
+/* line 1, D:/gitNode/hapi01/style/reset.scss */
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font: 62.5%/1.5 sans-serif;
   height: 100%; }
 
-/* line 7, C:/Users/havard/nodeprojects/hapi/style/reset.scss */
+/* line 7, D:/gitNode/hapi01/style/reset.scss */
 html, body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  -webkit-overflow-scrolling: touch; }
 
-/* line 12, C:/Users/havard/nodeprojects/hapi/style/reset.scss */
+/* line 12, D:/gitNode/hapi01/style/reset.scss */
 html * {
   max-height: 1000000px; }
 
-/* line 13, C:/Users/havard/nodeprojects/hapi/style/reset.scss */
+/* line 13, D:/gitNode/hapi01/style/reset.scss */
 body {
   min-height: 100%;
   font-size: 1.4rem;
@@ -59,90 +60,100 @@ body {
   color: #222;
   position: relative; }
 
-/* line 20, C:/Users/havard/nodeprojects/hapi/style/reset.scss */
+/* line 20, D:/gitNode/hapi01/style/reset.scss */
 img {
   border: none; }
 
-/* line 23, C:/Users/havard/nodeprojects/hapi/style/reset.scss */
-input, textarea, label {
+/* line 23, D:/gitNode/hapi01/style/reset.scss */
+input, textarea, label, select, button {
   font-family: "Open Sans", sans-serif;
   border: none;
   outline: none; }
 
-/* line 28, C:/Users/havard/nodeprojects/hapi/style/reset.scss */
+/* line 28, D:/gitNode/hapi01/style/reset.scss */
+button {
+  cursor: pointer; }
+
+/* line 31, D:/gitNode/hapi01/style/reset.scss */
 iframe {
   display: block;
   border: none; }
 
-/* line 33, C:/Users/havard/nodeprojects/hapi/style/reset.scss */
+/* line 35, D:/gitNode/hapi01/style/reset.scss */
+label {
+  display: block;
+  text-align: left;
+  min-height: 2em; }
+
+/* line 41, D:/gitNode/hapi01/style/reset.scss */
 .main {
   min-height: 100%; }
 
-/* line 34, C:/Users/havard/nodeprojects/hapi/style/reset.scss */
-.grid, .cell, div, ul, li, section, article, header, a, p, nav, form, input, select, fieldset, footer {
+/* line 42, D:/gitNode/hapi01/style/reset.scss */
+* {
   box-sizing: border-box; }
 
-/* line 38, C:/Users/havard/nodeprojects/hapi/style/reset.scss */
+/* line 46, D:/gitNode/hapi01/style/reset.scss */
 main, article, section, form, fieldset {
   display: block; }
 
-/* line 41, C:/Users/havard/nodeprojects/hapi/style/reset.scss */
+/* line 49, D:/gitNode/hapi01/style/reset.scss */
 ul, li {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-/* line 46, C:/Users/havard/nodeprojects/hapi/style/reset.scss */
+/* line 54, D:/gitNode/hapi01/style/reset.scss */
 a {
   text-decoration: none; }
 
-/* line 47, C:/Users/havard/nodeprojects/hapi/style/reset.scss */
+/* line 55, D:/gitNode/hapi01/style/reset.scss */
 p {
   margin: 0 0 1em;
   font-size: 1em; }
 
-/* line 51, C:/Users/havard/nodeprojects/hapi/style/reset.scss */
+/* line 59, D:/gitNode/hapi01/style/reset.scss */
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0; }
 
-/* line 5, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 5, D:/gitNode/hapi01/style/components/_grid.scss */
 .relative {
   position: relative !important; }
 
-/* line 6, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 6, D:/gitNode/hapi01/style/components/_grid.scss */
 .show-block {
   display: block !important; }
 
-/* line 7, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 7, D:/gitNode/hapi01/style/components/_grid.scss */
 .show-grid {
   display: flex !important; }
 
-/* line 8, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 8, D:/gitNode/hapi01/style/components/_grid.scss */
 .hide {
   display: none !important; }
 
-/* line 9, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 9, D:/gitNode/hapi01/style/components/_grid.scss */
 .text-center {
   text-align: center; }
 
-/* line 10, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 10, D:/gitNode/hapi01/style/components/_grid.scss */
 .text-right {
   text-align: right; }
 
-/* line 11, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 11, D:/gitNode/hapi01/style/components/_grid.scss */
 .float-left {
   float: left; }
 
-/* line 12, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 12, D:/gitNode/hapi01/style/components/_grid.scss */
 .float-right {
   float: right; }
 
-/* line 13, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 13, D:/gitNode/hapi01/style/components/_grid.scss */
 .nowrap {
   white-space: nowrap; }
 
-/* line 16, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 16, D:/gitNode/hapi01/style/components/_grid.scss */
 .clearfix:after {
   content: '';
   display: block;
@@ -150,1449 +161,1490 @@ h1, h2, h3, h4 {
   height: 0;
   clear: both; }
 
-/* line 31, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 31, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd {
   display: flex;
   flex-wrap: wrap; }
 
-/* line 35, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 35, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-row {
   flex-direction: row; }
 
-/* line 36, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 36, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-reverse {
   flex-direction: row-reverse; }
 
-/* line 37, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 37, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-column {
   flex-direction: column; }
 
-/* line 38, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 38, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-column-reverse {
   flex-direction: column-reverse; }
 
-/* line 39, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 39, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-nowrap {
   flex-flow: nowrap; }
 
-/* line 40, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 40, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-center {
   align-items: center; }
 
-/* line 41, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 41, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-justify-center {
   justify-content: center; }
 
-/* line 42, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 42, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-justify-end {
   justify-content: flex-end; }
 
-/* line 43, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 43, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl {
   flex: 1; }
 
-/* line 44, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 44, D:/gitNode/hapi01/style/components/_grid.scss */
 .collapsefix {
   flex-basis: auto; }
 
-/* line 45, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 45, D:/gitNode/hapi01/style/components/_grid.scss */
 .flex-cells > .cl {
   display: flex;
   width: 100%; }
 
-/* line 49, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 49, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl-content {
   width: 100%; }
 
-/* line 56, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 56, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd1 > .cl {
   flex: 0 0 8.33333%;
   max-width: 8.33333%; }
 
-/* line 61, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 61, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl1 {
   width: 8.33333% !important;
   max-width: 8.33333% !important;
   flex: none !important; }
 
-/* line 56, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 56, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd2 > .cl {
   flex: 0 0 16.66667%;
   max-width: 16.66667%; }
 
-/* line 61, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 61, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl2 {
   width: 16.66667% !important;
   max-width: 16.66667% !important;
   flex: none !important; }
 
-/* line 56, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 56, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd3 > .cl {
   flex: 0 0 25%;
   max-width: 25%; }
 
-/* line 61, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 61, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl3 {
   width: 25% !important;
   max-width: 25% !important;
   flex: none !important; }
 
-/* line 56, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 56, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd4 > .cl {
   flex: 0 0 33.33333%;
   max-width: 33.33333%; }
 
-/* line 61, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 61, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl4 {
   width: 33.33333% !important;
   max-width: 33.33333% !important;
   flex: none !important; }
 
-/* line 56, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 56, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd5 > .cl {
   flex: 0 0 41.66667%;
   max-width: 41.66667%; }
 
-/* line 61, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 61, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl5 {
   width: 41.66667% !important;
   max-width: 41.66667% !important;
   flex: none !important; }
 
-/* line 56, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 56, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd6 > .cl {
   flex: 0 0 50%;
   max-width: 50%; }
 
-/* line 61, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 61, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl6 {
   width: 50% !important;
   max-width: 50% !important;
   flex: none !important; }
 
-/* line 56, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 56, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd7 > .cl {
   flex: 0 0 58.33333%;
   max-width: 58.33333%; }
 
-/* line 61, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 61, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl7 {
   width: 58.33333% !important;
   max-width: 58.33333% !important;
   flex: none !important; }
 
-/* line 56, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 56, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd8 > .cl {
   flex: 0 0 66.66667%;
   max-width: 66.66667%; }
 
-/* line 61, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 61, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl8 {
   width: 66.66667% !important;
   max-width: 66.66667% !important;
   flex: none !important; }
 
-/* line 56, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 56, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd9 > .cl {
   flex: 0 0 75%;
   max-width: 75%; }
 
-/* line 61, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 61, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl9 {
   width: 75% !important;
   max-width: 75% !important;
   flex: none !important; }
 
-/* line 56, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 56, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd10 > .cl {
   flex: 0 0 83.33333%;
   max-width: 83.33333%; }
 
-/* line 61, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 61, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl10 {
   width: 83.33333% !important;
   max-width: 83.33333% !important;
   flex: none !important; }
 
-/* line 56, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 56, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd11 > .cl {
   flex: 0 0 91.66667%;
   max-width: 91.66667%; }
 
-/* line 61, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 61, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl11 {
   width: 91.66667% !important;
   max-width: 91.66667% !important;
   flex: none !important; }
 
-/* line 56, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 56, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd12 > .cl {
   flex: 0 0 100%;
   max-width: 100%; }
 
-/* line 61, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 61, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl12 {
   width: 100% !important;
   max-width: 100% !important;
   flex: none !important; }
 
-/* line 67, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 67, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl-auto {
   flex: auto !important;
   max-width: 100% !important; }
 
-/* line 71, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 71, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl-collapse {
   flex-grow: 0 !important;
   overflow: visible !important; }
 
-/* line 75, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 75, D:/gitNode/hapi01/style/components/_grid.scss */
 .noflex {
   flex: none !important; }
 
-/* line 78, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 78, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl-neg-order {
   order: -1; }
 
-/* line 81, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 81, D:/gitNode/hapi01/style/components/_grid.scss */
 .cl-fill {
   flex: 1 !important;
   max-width: none !important; }
 
-/* line 91, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 91, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-xxxxn {
   margin-left: -0.1rem;
   margin-top: -0.1rem; }
-  /* line 94, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 94, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-xxxxn > .cl {
     padding-left: 0.1rem;
     padding-top: 0.1rem; }
 
-/* line 99, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 99, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-x-xxxxn {
   margin-left: -0.1rem; }
-  /* line 101, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 101, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-x-xxxxn > .cl {
     padding-left: 0.1rem; }
 
-/* line 105, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 105, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-y-xxxxn {
   margin-top: -0.1rem; }
-  /* line 107, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 107, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-y-xxxxn > .cl {
     padding-top: 0.1rem; }
 
-/* line 91, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 91, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-xxxn {
   margin-left: -0.2rem;
   margin-top: -0.2rem; }
-  /* line 94, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 94, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-xxxn > .cl {
     padding-left: 0.2rem;
     padding-top: 0.2rem; }
 
-/* line 99, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 99, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-x-xxxn {
   margin-left: -0.2rem; }
-  /* line 101, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 101, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-x-xxxn > .cl {
     padding-left: 0.2rem; }
 
-/* line 105, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 105, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-y-xxxn {
   margin-top: -0.2rem; }
-  /* line 107, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 107, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-y-xxxn > .cl {
     padding-top: 0.2rem; }
 
-/* line 91, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 91, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-xxn {
   margin-left: -0.5rem;
   margin-top: -0.5rem; }
-  /* line 94, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 94, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-xxn > .cl {
     padding-left: 0.5rem;
     padding-top: 0.5rem; }
 
-/* line 99, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 99, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-x-xxn {
   margin-left: -0.5rem; }
-  /* line 101, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 101, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-x-xxn > .cl {
     padding-left: 0.5rem; }
 
-/* line 105, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 105, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-y-xxn {
   margin-top: -0.5rem; }
-  /* line 107, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 107, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-y-xxn > .cl {
     padding-top: 0.5rem; }
 
-/* line 91, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 91, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-xn {
   margin-left: -1.2rem;
   margin-top: -1.2rem; }
-  /* line 94, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 94, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-xn > .cl {
     padding-left: 1.2rem;
     padding-top: 1.2rem; }
 
-/* line 99, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 99, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-x-xn {
   margin-left: -1.2rem; }
-  /* line 101, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 101, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-x-xn > .cl {
     padding-left: 1.2rem; }
 
-/* line 105, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 105, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-y-xn {
   margin-top: -1.2rem; }
-  /* line 107, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 107, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-y-xn > .cl {
     padding-top: 1.2rem; }
 
-/* line 91, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 91, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-n {
   margin-left: -2rem;
   margin-top: -2rem; }
-  /* line 94, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 94, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-n > .cl {
     padding-left: 2rem;
     padding-top: 2rem; }
 
-/* line 99, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 99, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-x-n {
   margin-left: -2rem; }
-  /* line 101, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 101, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-x-n > .cl {
     padding-left: 2rem; }
 
-/* line 105, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 105, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-y-n {
   margin-top: -2rem; }
-  /* line 107, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 107, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-y-n > .cl {
     padding-top: 2rem; }
 
-/* line 91, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 91, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-nx {
   margin-left: -3.5rem;
   margin-top: -3.5rem; }
-  /* line 94, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 94, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-nx > .cl {
     padding-left: 3.5rem;
     padding-top: 3.5rem; }
 
-/* line 99, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 99, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-x-nx {
   margin-left: -3.5rem; }
-  /* line 101, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 101, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-x-nx > .cl {
     padding-left: 3.5rem; }
 
-/* line 105, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 105, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-y-nx {
   margin-top: -3.5rem; }
-  /* line 107, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 107, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-y-nx > .cl {
     padding-top: 3.5rem; }
 
-/* line 91, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 91, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-nxx {
   margin-left: -4rem;
   margin-top: -4rem; }
-  /* line 94, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 94, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-nxx > .cl {
     padding-left: 4rem;
     padding-top: 4rem; }
 
-/* line 99, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 99, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-x-nxx {
   margin-left: -4rem; }
-  /* line 101, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 101, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-x-nxx > .cl {
     padding-left: 4rem; }
 
-/* line 105, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 105, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-y-nxx {
   margin-top: -4rem; }
-  /* line 107, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 107, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-y-nxx > .cl {
     padding-top: 4rem; }
 
-/* line 91, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 91, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-nxxx {
   margin-left: -4.5rem;
   margin-top: -4.5rem; }
-  /* line 94, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 94, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-nxxx > .cl {
     padding-left: 4.5rem;
     padding-top: 4.5rem; }
 
-/* line 99, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 99, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-x-nxxx {
   margin-left: -4.5rem; }
-  /* line 101, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 101, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-x-nxxx > .cl {
     padding-left: 4.5rem; }
 
-/* line 105, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+/* line 105, D:/gitNode/hapi01/style/components/_grid.scss */
 .gd-gtrs-y-nxxx {
   margin-top: -4.5rem; }
-  /* line 107, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 107, D:/gitNode/hapi01/style/components/_grid.scss */
   .gd-gtrs-y-nxxx > .cl {
     padding-top: 4.5rem; }
 
 @media (max-width: 721px) {
-  /* line 125, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 125, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-relative {
     position: relative !important; }
-  /* line 126, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 126, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-show-block {
     display: block !important; }
-  /* line 127, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 127, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-show-grid {
     display: flex !important; }
-  /* line 128, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 128, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-hide {
     display: none !important; }
-  /* line 129, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 129, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-text-center {
     text-align: center; }
-  /* line 130, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 130, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-text-right {
     text-align: right; }
-  /* line 132, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 132, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd {
     display: flex;
     flex-wrap: wrap; }
-  /* line 136, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 136, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-row {
     flex-direction: row; }
-  /* line 137, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 137, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-reverse {
     flex-direction: row-reverse; }
-  /* line 138, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 138, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-column {
     flex-direction: column; }
-  /* line 139, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 139, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-column-reverse {
     flex-direction: column-reverse; }
-  /* line 140, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 140, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-block {
     display: block; }
-  /* line 141, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 141, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-no-cl {
     flex: initial; }
-  /* line 142, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 142, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-center {
     align-items: center; }
-  /* line 143, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 143, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-cl-content {
     width: 100%; }
-  /* line 144, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 144, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-cl-neg-order {
     order: -1; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd1 > .cl {
     flex: 0 0 8.33333%;
     max-width: 8.33333%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-cl1 {
     width: 8.33333% !important;
     max-width: 8.33333% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd2 > .cl {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-cl2 {
     width: 16.66667% !important;
     max-width: 16.66667% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd3 > .cl {
     flex: 0 0 25%;
     max-width: 25%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-cl3 {
     width: 25% !important;
     max-width: 25% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd4 > .cl {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-cl4 {
     width: 33.33333% !important;
     max-width: 33.33333% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd5 > .cl {
     flex: 0 0 41.66667%;
     max-width: 41.66667%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-cl5 {
     width: 41.66667% !important;
     max-width: 41.66667% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd6 > .cl {
     flex: 0 0 50%;
     max-width: 50%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-cl6 {
     width: 50% !important;
     max-width: 50% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd7 > .cl {
     flex: 0 0 58.33333%;
     max-width: 58.33333%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-cl7 {
     width: 58.33333% !important;
     max-width: 58.33333% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd8 > .cl {
     flex: 0 0 66.66667%;
     max-width: 66.66667%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-cl8 {
     width: 66.66667% !important;
     max-width: 66.66667% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd9 > .cl {
     flex: 0 0 75%;
     max-width: 75%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-cl9 {
     width: 75% !important;
     max-width: 75% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd10 > .cl {
     flex: 0 0 83.33333%;
     max-width: 83.33333%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-cl10 {
     width: 83.33333% !important;
     max-width: 83.33333% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd11 > .cl {
     flex: 0 0 91.66667%;
     max-width: 91.66667%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-cl11 {
     width: 91.66667% !important;
     max-width: 91.66667% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd12 > .cl {
     flex: 0 0 100%;
     max-width: 100%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-cl12 {
     width: 100% !important;
     max-width: 100% !important;
     flex: none !important; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-xxxxn {
     margin-left: -0.1rem;
     margin-top: -0.1rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-xxxxn > .cell {
       padding-left: 0.1rem;
       padding-top: 0.1rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-x-xxxxn {
     margin-left: -0.1rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-x-xxxxn > .cell {
       padding-left: 0.1rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-y-xxxxn {
     margin-top: -0.1rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-y-xxxxn > .cell {
       padding-top: 0.1rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-xxxn {
     margin-left: -0.2rem;
     margin-top: -0.2rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-xxxn > .cell {
       padding-left: 0.2rem;
       padding-top: 0.2rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-x-xxxn {
     margin-left: -0.2rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-x-xxxn > .cell {
       padding-left: 0.2rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-y-xxxn {
     margin-top: -0.2rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-y-xxxn > .cell {
       padding-top: 0.2rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-xxn {
     margin-left: -0.5rem;
     margin-top: -0.5rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-xxn > .cell {
       padding-left: 0.5rem;
       padding-top: 0.5rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-x-xxn {
     margin-left: -0.5rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-x-xxn > .cell {
       padding-left: 0.5rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-y-xxn {
     margin-top: -0.5rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-y-xxn > .cell {
       padding-top: 0.5rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-xn {
     margin-left: -1.2rem;
     margin-top: -1.2rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-xn > .cell {
       padding-left: 1.2rem;
       padding-top: 1.2rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-x-xn {
     margin-left: -1.2rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-x-xn > .cell {
       padding-left: 1.2rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-y-xn {
     margin-top: -1.2rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-y-xn > .cell {
       padding-top: 1.2rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-n {
     margin-left: -2rem;
     margin-top: -2rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-n > .cell {
       padding-left: 2rem;
       padding-top: 2rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-x-n {
     margin-left: -2rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-x-n > .cell {
       padding-left: 2rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-y-n {
     margin-top: -2rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-y-n > .cell {
       padding-top: 2rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-nx {
     margin-left: -3.5rem;
     margin-top: -3.5rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-nx > .cell {
       padding-left: 3.5rem;
       padding-top: 3.5rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-x-nx {
     margin-left: -3.5rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-x-nx > .cell {
       padding-left: 3.5rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-y-nx {
     margin-top: -3.5rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-y-nx > .cell {
       padding-top: 3.5rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-nxx {
     margin-left: -4rem;
     margin-top: -4rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-nxx > .cell {
       padding-left: 4rem;
       padding-top: 4rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-x-nxx {
     margin-left: -4rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-x-nxx > .cell {
       padding-left: 4rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-y-nxx {
     margin-top: -4rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-y-nxx > .cell {
       padding-top: 4rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-nxxx {
     margin-left: -4.5rem;
     margin-top: -4.5rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-nxxx > .cell {
       padding-left: 4.5rem;
       padding-top: 4.5rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-x-nxxx {
     margin-left: -4.5rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-x-nxxx > .cell {
       padding-left: 4.5rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .sm-gd-gtrs-y-nxxx {
     margin-top: -4.5rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .sm-gd-gtrs-y-nxxx > .cell {
       padding-top: 4.5rem; } }
 
 @media (max-width: 960px) and (min-width: 721px) {
-  /* line 125, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 125, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-relative {
     position: relative !important; }
-  /* line 126, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 126, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-show-block {
     display: block !important; }
-  /* line 127, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 127, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-show-grid {
     display: flex !important; }
-  /* line 128, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 128, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-hide {
     display: none !important; }
-  /* line 129, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 129, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-text-center {
     text-align: center; }
-  /* line 130, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 130, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-text-right {
     text-align: right; }
-  /* line 132, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 132, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd {
     display: flex;
     flex-wrap: wrap; }
-  /* line 136, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 136, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-row {
     flex-direction: row; }
-  /* line 137, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 137, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-reverse {
     flex-direction: row-reverse; }
-  /* line 138, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 138, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-column {
     flex-direction: column; }
-  /* line 139, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 139, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-column-reverse {
     flex-direction: column-reverse; }
-  /* line 140, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 140, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-block {
     display: block; }
-  /* line 141, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 141, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-no-cl {
     flex: initial; }
-  /* line 142, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 142, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-center {
     align-items: center; }
-  /* line 143, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 143, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-cl-content {
     width: 100%; }
-  /* line 144, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 144, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-cl-neg-order {
     order: -1; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd1 > .cl {
     flex: 0 0 8.33333%;
     max-width: 8.33333%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-cl1 {
     width: 8.33333% !important;
     max-width: 8.33333% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd2 > .cl {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-cl2 {
     width: 16.66667% !important;
     max-width: 16.66667% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd3 > .cl {
     flex: 0 0 25%;
     max-width: 25%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-cl3 {
     width: 25% !important;
     max-width: 25% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd4 > .cl {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-cl4 {
     width: 33.33333% !important;
     max-width: 33.33333% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd5 > .cl {
     flex: 0 0 41.66667%;
     max-width: 41.66667%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-cl5 {
     width: 41.66667% !important;
     max-width: 41.66667% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd6 > .cl {
     flex: 0 0 50%;
     max-width: 50%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-cl6 {
     width: 50% !important;
     max-width: 50% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd7 > .cl {
     flex: 0 0 58.33333%;
     max-width: 58.33333%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-cl7 {
     width: 58.33333% !important;
     max-width: 58.33333% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd8 > .cl {
     flex: 0 0 66.66667%;
     max-width: 66.66667%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-cl8 {
     width: 66.66667% !important;
     max-width: 66.66667% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd9 > .cl {
     flex: 0 0 75%;
     max-width: 75%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-cl9 {
     width: 75% !important;
     max-width: 75% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd10 > .cl {
     flex: 0 0 83.33333%;
     max-width: 83.33333%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-cl10 {
     width: 83.33333% !important;
     max-width: 83.33333% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd11 > .cl {
     flex: 0 0 91.66667%;
     max-width: 91.66667%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-cl11 {
     width: 91.66667% !important;
     max-width: 91.66667% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd12 > .cl {
     flex: 0 0 100%;
     max-width: 100%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-cl12 {
     width: 100% !important;
     max-width: 100% !important;
     flex: none !important; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-xxxxn {
     margin-left: -0.1rem;
     margin-top: -0.1rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-xxxxn > .cell {
       padding-left: 0.1rem;
       padding-top: 0.1rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-x-xxxxn {
     margin-left: -0.1rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-x-xxxxn > .cell {
       padding-left: 0.1rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-y-xxxxn {
     margin-top: -0.1rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-y-xxxxn > .cell {
       padding-top: 0.1rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-xxxn {
     margin-left: -0.2rem;
     margin-top: -0.2rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-xxxn > .cell {
       padding-left: 0.2rem;
       padding-top: 0.2rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-x-xxxn {
     margin-left: -0.2rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-x-xxxn > .cell {
       padding-left: 0.2rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-y-xxxn {
     margin-top: -0.2rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-y-xxxn > .cell {
       padding-top: 0.2rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-xxn {
     margin-left: -0.5rem;
     margin-top: -0.5rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-xxn > .cell {
       padding-left: 0.5rem;
       padding-top: 0.5rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-x-xxn {
     margin-left: -0.5rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-x-xxn > .cell {
       padding-left: 0.5rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-y-xxn {
     margin-top: -0.5rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-y-xxn > .cell {
       padding-top: 0.5rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-xn {
     margin-left: -1.2rem;
     margin-top: -1.2rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-xn > .cell {
       padding-left: 1.2rem;
       padding-top: 1.2rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-x-xn {
     margin-left: -1.2rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-x-xn > .cell {
       padding-left: 1.2rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-y-xn {
     margin-top: -1.2rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-y-xn > .cell {
       padding-top: 1.2rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-n {
     margin-left: -2rem;
     margin-top: -2rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-n > .cell {
       padding-left: 2rem;
       padding-top: 2rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-x-n {
     margin-left: -2rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-x-n > .cell {
       padding-left: 2rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-y-n {
     margin-top: -2rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-y-n > .cell {
       padding-top: 2rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-nx {
     margin-left: -3.5rem;
     margin-top: -3.5rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-nx > .cell {
       padding-left: 3.5rem;
       padding-top: 3.5rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-x-nx {
     margin-left: -3.5rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-x-nx > .cell {
       padding-left: 3.5rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-y-nx {
     margin-top: -3.5rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-y-nx > .cell {
       padding-top: 3.5rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-nxx {
     margin-left: -4rem;
     margin-top: -4rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-nxx > .cell {
       padding-left: 4rem;
       padding-top: 4rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-x-nxx {
     margin-left: -4rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-x-nxx > .cell {
       padding-left: 4rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-y-nxx {
     margin-top: -4rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-y-nxx > .cell {
       padding-top: 4rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-nxxx {
     margin-left: -4.5rem;
     margin-top: -4.5rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-nxxx > .cell {
       padding-left: 4.5rem;
       padding-top: 4.5rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-x-nxxx {
     margin-left: -4.5rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-x-nxxx > .cell {
       padding-left: 4.5rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .md-gd-gtrs-y-nxxx {
     margin-top: -4.5rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .md-gd-gtrs-y-nxxx > .cell {
       padding-top: 4.5rem; } }
 
 @media (min-width: 960px) {
-  /* line 125, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 125, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-relative {
     position: relative !important; }
-  /* line 126, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 126, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-show-block {
     display: block !important; }
-  /* line 127, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 127, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-show-grid {
     display: flex !important; }
-  /* line 128, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 128, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-hide {
     display: none !important; }
-  /* line 129, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 129, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-text-center {
     text-align: center; }
-  /* line 130, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 130, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-text-right {
     text-align: right; }
-  /* line 132, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 132, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd {
     display: flex;
     flex-wrap: wrap; }
-  /* line 136, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 136, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-row {
     flex-direction: row; }
-  /* line 137, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 137, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-reverse {
     flex-direction: row-reverse; }
-  /* line 138, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 138, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-column {
     flex-direction: column; }
-  /* line 139, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 139, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-column-reverse {
     flex-direction: column-reverse; }
-  /* line 140, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 140, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-block {
     display: block; }
-  /* line 141, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 141, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-no-cl {
     flex: initial; }
-  /* line 142, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 142, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-center {
     align-items: center; }
-  /* line 143, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 143, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-cl-content {
     width: 100%; }
-  /* line 144, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 144, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-cl-neg-order {
     order: -1; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd1 > .cl {
     flex: 0 0 8.33333%;
     max-width: 8.33333%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-cl1 {
     width: 8.33333% !important;
     max-width: 8.33333% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd2 > .cl {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-cl2 {
     width: 16.66667% !important;
     max-width: 16.66667% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd3 > .cl {
     flex: 0 0 25%;
     max-width: 25%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-cl3 {
     width: 25% !important;
     max-width: 25% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd4 > .cl {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-cl4 {
     width: 33.33333% !important;
     max-width: 33.33333% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd5 > .cl {
     flex: 0 0 41.66667%;
     max-width: 41.66667%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-cl5 {
     width: 41.66667% !important;
     max-width: 41.66667% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd6 > .cl {
     flex: 0 0 50%;
     max-width: 50%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-cl6 {
     width: 50% !important;
     max-width: 50% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd7 > .cl {
     flex: 0 0 58.33333%;
     max-width: 58.33333%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-cl7 {
     width: 58.33333% !important;
     max-width: 58.33333% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd8 > .cl {
     flex: 0 0 66.66667%;
     max-width: 66.66667%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-cl8 {
     width: 66.66667% !important;
     max-width: 66.66667% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd9 > .cl {
     flex: 0 0 75%;
     max-width: 75%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-cl9 {
     width: 75% !important;
     max-width: 75% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd10 > .cl {
     flex: 0 0 83.33333%;
     max-width: 83.33333%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-cl10 {
     width: 83.33333% !important;
     max-width: 83.33333% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd11 > .cl {
     flex: 0 0 91.66667%;
     max-width: 91.66667%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-cl11 {
     width: 91.66667% !important;
     max-width: 91.66667% !important;
     flex: none !important; }
-  /* line 149, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 149, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd12 > .cl {
     flex: 0 0 100%;
     max-width: 100%; }
-  /* line 154, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 154, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-cl12 {
     width: 100% !important;
     max-width: 100% !important;
     flex: none !important; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-xxxxn {
     margin-left: -0.1rem;
     margin-top: -0.1rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-xxxxn > .cell {
       padding-left: 0.1rem;
       padding-top: 0.1rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-x-xxxxn {
     margin-left: -0.1rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-x-xxxxn > .cell {
       padding-left: 0.1rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-y-xxxxn {
     margin-top: -0.1rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-y-xxxxn > .cell {
       padding-top: 0.1rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-xxxn {
     margin-left: -0.2rem;
     margin-top: -0.2rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-xxxn > .cell {
       padding-left: 0.2rem;
       padding-top: 0.2rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-x-xxxn {
     margin-left: -0.2rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-x-xxxn > .cell {
       padding-left: 0.2rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-y-xxxn {
     margin-top: -0.2rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-y-xxxn > .cell {
       padding-top: 0.2rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-xxn {
     margin-left: -0.5rem;
     margin-top: -0.5rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-xxn > .cell {
       padding-left: 0.5rem;
       padding-top: 0.5rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-x-xxn {
     margin-left: -0.5rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-x-xxn > .cell {
       padding-left: 0.5rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-y-xxn {
     margin-top: -0.5rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-y-xxn > .cell {
       padding-top: 0.5rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-xn {
     margin-left: -1.2rem;
     margin-top: -1.2rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-xn > .cell {
       padding-left: 1.2rem;
       padding-top: 1.2rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-x-xn {
     margin-left: -1.2rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-x-xn > .cell {
       padding-left: 1.2rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-y-xn {
     margin-top: -1.2rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-y-xn > .cell {
       padding-top: 1.2rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-n {
     margin-left: -2rem;
     margin-top: -2rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-n > .cell {
       padding-left: 2rem;
       padding-top: 2rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-x-n {
     margin-left: -2rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-x-n > .cell {
       padding-left: 2rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-y-n {
     margin-top: -2rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-y-n > .cell {
       padding-top: 2rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-nx {
     margin-left: -3.5rem;
     margin-top: -3.5rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-nx > .cell {
       padding-left: 3.5rem;
       padding-top: 3.5rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-x-nx {
     margin-left: -3.5rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-x-nx > .cell {
       padding-left: 3.5rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-y-nx {
     margin-top: -3.5rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-y-nx > .cell {
       padding-top: 3.5rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-nxx {
     margin-left: -4rem;
     margin-top: -4rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-nxx > .cell {
       padding-left: 4rem;
       padding-top: 4rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-x-nxx {
     margin-left: -4rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-x-nxx > .cell {
       padding-left: 4rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-y-nxx {
     margin-top: -4rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-y-nxx > .cell {
       padding-top: 4rem; }
-  /* line 163, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 163, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-nxxx {
     margin-left: -4.5rem;
     margin-top: -4.5rem; }
-    /* line 166, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 166, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-nxxx > .cell {
       padding-left: 4.5rem;
       padding-top: 4.5rem; }
-  /* line 171, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 171, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-x-nxxx {
     margin-left: -4.5rem; }
-    /* line 173, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 173, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-x-nxxx > .cell {
       padding-left: 4.5rem; }
-  /* line 177, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 177, D:/gitNode/hapi01/style/components/_grid.scss */
   .lg-gd-gtrs-y-nxxx {
     margin-top: -4.5rem; }
-    /* line 179, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+    /* line 179, D:/gitNode/hapi01/style/components/_grid.scss */
     .lg-gd-gtrs-y-nxxx > .cell {
       padding-top: 4.5rem; } }
 
 @media (min-width: 1684px) {
-  /* line 191, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 191, D:/gitNode/hapi01/style/components/_grid.scss */
   .page-constrain {
     padding: 0 calc(50% - 780px); } }
 
 @media (max-width: 1683px) and (min-width: 1400px) {
-  /* line 191, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 191, D:/gitNode/hapi01/style/components/_grid.scss */
   .page-constrain {
     padding: 0 4.5%; } }
 
 @media (max-width: 1399px) and (min-width: 961px) {
-  /* line 191, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 191, D:/gitNode/hapi01/style/components/_grid.scss */
   .page-constrain {
     padding: 0 4.5%; } }
 
 @media (max-width: 960px) and (min-width: 721px) {
-  /* line 191, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 191, D:/gitNode/hapi01/style/components/_grid.scss */
   .page-constrain {
     padding: 0 4%; } }
 
 @media (max-width: 720px) {
-  /* line 191, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 191, D:/gitNode/hapi01/style/components/_grid.scss */
   .page-constrain {
     padding: 0 1rem; } }
 
 @media (min-width: 1684px) {
-  /* line 198, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 198, D:/gitNode/hapi01/style/components/_grid.scss */
   .page-constrain-more {
     padding: 0 calc(50% - 650px); } }
 
 @media (max-width: 1683px) and (min-width: 1400px) {
-  /* line 198, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 198, D:/gitNode/hapi01/style/components/_grid.scss */
   .page-constrain-more {
     padding: 0 10%; } }
 
 @media (max-width: 1399px) and (min-width: 961px) {
-  /* line 198, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 198, D:/gitNode/hapi01/style/components/_grid.scss */
   .page-constrain-more {
     padding: 0 7%; } }
 
 @media (max-width: 960px) and (min-width: 721px) {
-  /* line 198, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 198, D:/gitNode/hapi01/style/components/_grid.scss */
   .page-constrain-more {
     padding: 0 6%; } }
 
 @media (max-width: 720px) {
-  /* line 198, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 198, D:/gitNode/hapi01/style/components/_grid.scss */
   .page-constrain-more {
     padding: 0 1rem; } }
 
 @media (max-width: 960px) and (min-width: 721px) {
-  /* line 207, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 207, D:/gitNode/hapi01/style/components/_grid.scss */
   .medium-no-constrain {
     padding: 0; } }
 
 @media (max-width: 721px) {
-  /* line 213, C:/Users/havard/nodeprojects/hapi/style/components/_grid.scss */
+  /* line 213, D:/gitNode/hapi01/style/components/_grid.scss */
   .small-no-constrain {
     padding: 0; } }
 
-/* line 7, C:/Users/havard/nodeprojects/hapi/style/components/_form.scss */
-.form-control > input {
+/* line 99, D:/gitNode/hapi01/style/mixins.scss */
+input::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #fff; }
+
+/* line 100, D:/gitNode/hapi01/style/mixins.scss */
+input:-moz-placeholder, select:-moz-placeholder, textarea:-moz-placeholder {
+  color: #fff; }
+
+/* line 101, D:/gitNode/hapi01/style/mixins.scss */
+input::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder {
+  color: #fff; }
+
+/* line 102, D:/gitNode/hapi01/style/mixins.scss */
+input:-ms-input-placeholder, select:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #fff; }
+
+/* line 14, D:/gitNode/hapi01/style/components/_form.scss */
+.fc > input, .fc select {
   width: 100%;
   height: 6rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem; }
 
-/* line 13, C:/Users/havard/nodeprojects/hapi/style/components/_form.scss */
-.form-control > textarea {
-  width: 100%; }
+/* line 20, D:/gitNode/hapi01/style/components/_form.scss */
+.fc > textarea {
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: calc(6rem - 2em);
+  min-height: 8em; }
 
-/* line 19, C:/Users/havard/nodeprojects/hapi/style/components/_form.scss */
-.inline-labels .form-control {
+/* line 29, D:/gitNode/hapi01/style/components/_form.scss */
+.btn {
+  height: 6rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+
+/* line 36, D:/gitNode/hapi01/style/components/_form.scss */
+.inline-labels .fc {
   position: relative; }
-  /* line 22, C:/Users/havard/nodeprojects/hapi/style/components/_form.scss */
-  .inline-labels .form-control input, .inline-labels .form-control select, .inline-labels .form-control textarea {
-    padding-top: calc(6rem - 3em); }
-    /* line 26, C:/Users/havard/nodeprojects/hapi/style/components/_form.scss */
-    .inline-labels .form-control input[value=""] + label, .inline-labels .form-control select[value=""] + label, .inline-labels .form-control textarea[value=""] + label {
-      top: 50%;
+  /* line 39, D:/gitNode/hapi01/style/components/_form.scss */
+  .inline-labels .fc input, .inline-labels .fc select, .inline-labels .fc textarea {
+    transition: color .3s; }
+    /* line 41, D:/gitNode/hapi01/style/components/_form.scss */
+    .inline-labels .fc input:not(textarea), .inline-labels .fc select:not(textarea), .inline-labels .fc textarea:not(textarea) {
+      padding-top: calc(6rem - 3em); }
+    /* line 46, D:/gitNode/hapi01/style/components/_form.scss */
+    .inline-labels .fc input[value=""] + label, .inline-labels .fc select[value=""] + label, .inline-labels .fc textarea[value=""] + label {
+      top: 2.1em;
       font-size: 1em;
       color: inherit; }
-    /* line 33, C:/Users/havard/nodeprojects/hapi/style/components/_form.scss */
-    .inline-labels .form-control input:focus + label, .inline-labels .form-control select:focus + label, .inline-labels .form-control textarea:focus + label {
-      top: 30%;
+    /* line 99, D:/gitNode/hapi01/style/mixins.scss */
+    .inline-labels .fc input[value=""]:focus::-webkit-input-placeholder, .inline-labels .fc select[value=""]:focus::-webkit-input-placeholder, .inline-labels .fc textarea[value=""]:focus::-webkit-input-placeholder {
+      color: #ccc; }
+    /* line 100, D:/gitNode/hapi01/style/mixins.scss */
+    .inline-labels .fc input[value=""]:focus:-moz-placeholder, .inline-labels .fc select[value=""]:focus:-moz-placeholder, .inline-labels .fc textarea[value=""]:focus:-moz-placeholder {
+      color: #ccc; }
+    /* line 101, D:/gitNode/hapi01/style/mixins.scss */
+    .inline-labels .fc input[value=""]:focus::-moz-placeholder, .inline-labels .fc select[value=""]:focus::-moz-placeholder, .inline-labels .fc textarea[value=""]:focus::-moz-placeholder {
+      color: #ccc; }
+    /* line 102, D:/gitNode/hapi01/style/mixins.scss */
+    .inline-labels .fc input[value=""]:focus:-ms-input-placeholder, .inline-labels .fc select[value=""]:focus:-ms-input-placeholder, .inline-labels .fc textarea[value=""]:focus:-ms-input-placeholder {
+      color: #ccc; }
+    /* line 59, D:/gitNode/hapi01/style/components/_form.scss */
+    .inline-labels .fc input:focus + label, .inline-labels .fc select:focus + label, .inline-labels .fc textarea:focus + label {
+      top: 1.5em;
       font-size: .8em;
       transition: all .2s;
       color: #999; }
-  /* line 42, C:/Users/havard/nodeprojects/hapi/style/components/_form.scss */
-  .inline-labels .form-control label {
+  /* line 68, D:/gitNode/hapi01/style/components/_form.scss */
+  .inline-labels .fc label {
     transition: all .3s;
-    top: 30%;
-    left: 1.5rem;
+    top: 1.5em;
+    left: 1.33333rem;
     line-height: 1;
     font-size: .8em;
     position: absolute;
@@ -1600,14 +1652,13 @@ h1, h2, h3, h4 {
     font-weight: 600;
     color: #999; }
 
-/* line 9, C:/Users/havard/nodeprojects/hapi/style/app.scss */
+/* line 9, D:/gitNode/hapi01/style/app.scss */
 body {
-  text-align: center;
-  font-family: sans-serif;
+  padding-top: 4rem;
   background: #f2f2f2; }
-  /* line 13, C:/Users/havard/nodeprojects/hapi/style/app.scss */
+  /* line 12, D:/gitNode/hapi01/style/app.scss */
   body > p, body h1, body h2 {
     color: #000; }
-  /* line 16, C:/Users/havard/nodeprojects/hapi/style/app.scss */
+  /* line 15, D:/gitNode/hapi01/style/app.scss */
   body h1 {
     text-transform: uppercase; }
