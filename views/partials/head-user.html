@@ -1,14 +1,3 @@
 
-<!-- Scripts -->
-
-{{#each files.head}}
-  {{#if script}}
-    <script src="{{{script}}}"/></script>
-  {{/if}}
-  {{#if link}}
-    <link href="{{{link}}}" rel="{{{rel}}}"/>
-  {{/if}}
-{{/each}}
-
-<!-- Other links-->
-
+{{#listFiles files.head}}
+{{/listFiles}}

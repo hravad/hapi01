@@ -18,11 +18,11 @@ var sassOptions = {
     src: './style',
     dest: './css',
     force: true,
-    debug: false,
+    debug: true,
     routePath: '/style/{file}.css',
     //includePaths: ['./example/vendor/sass'],
     outputStyle: 'nested',
-    sourceComments: false,
+    sourceComments: true,
     sourceMaps: true,
     srcExtension: 'scss'
 };

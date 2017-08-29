@@ -1,0 +1,59 @@
+
+@mixin formControl() {
+  $h: 6rem;
+  $s: "input, select, textarea";
+
+  .form-control {
+    > input {
+      width: 100%;
+      height: $h;
+      padding-left: $h/4;
+      padding-right: $h/4;
+    }
+    > textarea {
+      width: 100%;
+    }
+  }
+
+  .inline-labels {
+    .form-control {
+      position: relative;
+
+      #{$s} {
+        padding-top: calc(#{$h} - 3em);
+
+        &[value=""] {
+          +label {
+            top: 50%;
+            font-size: 1em;
+            color: inherit;
+          }
+        }
+        &:focus{
+          +label {
+            top: 30%;
+            font-size: .8em;
+            transition: all .2s;
+            color: #999;
+          }
+        }
+      }
+
+      label {
+        transition: all .3s;
+        top: 30%;
+        left: $h/4;
+        line-height: 1;
+        font-size: .8em;
+        position: absolute;
+        margin-top: -.5em;
+        //todo:remove
+        font-weight: 600;
+        color: #999;
+      }
+    }
+  }
+
+}
+
+@include formControl;

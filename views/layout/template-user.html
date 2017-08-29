@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>{{site 'title'}}</title>
-  {{> head-user}}
+  <title>{{title}} - {{site 'title'}}</title>
+  {{#listFiles files.head}}{{/listFiles}}
 </head>
 
 <body class="{{#if bodyClass}}{{inserts 'bodyClass'}}{{/if}}">

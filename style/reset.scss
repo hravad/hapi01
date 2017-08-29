@@ -20,7 +20,11 @@ body {
 img {
   border: none;
 }
-
+input, textarea, label {
+  font-family: $primaryFont;
+  border: none;
+  outline: none;
+}
 iframe {
   display: block;
   border: none;
