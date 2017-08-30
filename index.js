@@ -5,24 +5,29 @@ const Hoek = require('hoek');
 const HapiSass = require('hapi-sass');
 const Vision = require('vision');
 const Inert = require('inert');
-const Handlers = require('./lib/handlers');
 const server = new Hapi.Server();
 const Handlebars = require('handlebars');
+const mongoUri = 'mongodb://heroku_pbr4tz5d:aata9jk3m19cv5e418a0g2m3nt@ds111124.mlab.com:11124/heroku_pbr4tz5d';
 const mongoose = require('mongoose');
 
-const mongo = 'mongodb://heroku_pbr4tz5d:aata9jk3m19cv5e418a0g2m3nt@ds111124.mlab.com:11124/heroku_pbr4tz5d';
+require('./models/users');
 
-mongoose.connect(mongo, function (err, res) {
-    if (err) {
-        console.log ('ERROR connecting to: ' + mongo + '. ' + err);
-    } else {
-        console.log ('Succeeded connected to: ' + mongo);
-    }
+const Handlers = require('./lib/handlers');
+
+
+mongoose.connect(mongoUri, {
+    useMongoClient: true
 });
+
+var mongooseOptions = {
+    bluebird: false,
+    uri: 'mongodb://heroku_pbr4tz5d:aata9jk3m19cv5e418a0g2m3nt@ds111124.mlab.com:11124/heroku_pbr4tz5d'
+};
 
 server.connection({
     port: process.env.PORT || 3000
 });
+
 
 var sassOptions = {
     src: './style',
@@ -67,3 +72,6 @@ server.register([Vision, Inert, {
 
     });
 });
+
+
+//var db = server.plugins['hapi-mongoose'].connection;

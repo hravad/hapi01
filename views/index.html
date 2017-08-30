@@ -1,17 +1,17 @@
 
 <div class="page-constrain">
 
-  <form class="gd gd6 sm-gd12 gd-gtrs-xn inline-labels">
+  <form class="gd gd6 sm-gd12 gd-gtrs-xn inline-labels" method="post" action="/users">
 
     <div class="cl">
       <div class="fc">
-        <input placeholder="Donald" type="text" value="" onblur="formControl(this)">
+        <input name="firstName" placeholder="Donald" type="text" value="" onblur="formControl(this)">
         <label>Fornavn</label>
       </div>
     </div>
     <div class="cl">
       <div class="fc">
-        <input placeholder="Duck" type="text" value="" onblur="formControl(this)">
+        <input name="lastName" placeholder="Duck" type="text" value="" onblur="formControl(this)">
         <label>Etternavn</label>
       </div>
     </div>
@@ -40,7 +40,7 @@
 
     <div class="cl cl12">
       <div class="btn-group">
-        <button class="btn">Btn 1</button>
+        <button type="submit" class="btn">Btn 1</button>
         <button class="btn">Btn 2</button>
         <button class="btn">Btn 3</button>
         <button class="btn">Btn 4</button>

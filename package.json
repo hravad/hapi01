@@ -15,6 +15,7 @@
   "dependencies": {
     "handlebars": "^4.0.10",
     "hapi": "^16.5.2",
+    "hapi-mongoose": "^1.0.1",
     "hapi-sass": "^2.3.1",
     "inert": "^4.2.1",
     "mongoose": "^4.11.9",
