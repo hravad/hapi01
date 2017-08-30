@@ -14,12 +14,11 @@ require('./models/users');
 
 const Handlers = require('./lib/handlers');
 
-
 mongoose.connect(mongoUri, {
     useMongoClient: true
 });
 
-var mongooseOptions = {
+const mongooseOptions = {
     bluebird: false,
     uri: 'mongodb://heroku_pbr4tz5d:aata9jk3m19cv5e418a0g2m3nt@ds111124.mlab.com:11124/heroku_pbr4tz5d'
 };
@@ -29,7 +28,7 @@ server.connection({
 });
 
 
-var sassOptions = {
+const sassOptions = {
     src: './style',
     dest: './css',
     force: true,
