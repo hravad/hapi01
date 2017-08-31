@@ -36,6 +36,7 @@ Events.prototype = {
 
 
 var Jesus, J;
+
 Jesus = J = (function () {
 
 
@@ -82,6 +83,33 @@ Jesus = J = (function () {
 
     };
 
+    // XHR ///////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////
+
+
+    var xhr = function (url, opts) {
+
+    };
+
+    xhr.engine = superAgent;
+
+
+    xhr.get = function (url, opts) {
+
+        this.engine.get();
+        // events.fireEvent('xhrget')
+    };
+
+    xhr.post = function (url, fn) {
+
+
+    };
+
+    xhr.put = function () {
+
+
+    };
+
     // Templating ///////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////
 
@@ -109,6 +137,52 @@ Jesus = J = (function () {
             }
         }
         return el;
+    };
+
+    // Array ////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////
+
+    var A = function () { };
+
+    A.prototype = new Array;
+
+    var elementProps = [
+        'AddClass',
+        'RemoveClass',
+        'InnerHTML',
+        'Html',
+        'Append'
+    ];
+
+    (function () {
+
+        var p = elementProps, l = elementProps.length, i;
+
+        for(i = 0; i < l; i++) {
+
+            (function (p) {
+                Object.defineProperty(A.prototype, p, {
+
+                    value: function () {
+
+                        for(var i = 0; i < this.length; i++) {
+
+                            var el = this[i];
+                            el[p].apply(el, arguments);
+                        }
+
+                        return this;
+                    }
+                });
+
+            })(elementProps[i]);
+
+        }
+    })();
+
+    var array = function () {
+
+        return new A;
     };
 
     // Inline Script handling ///////////////////////////////////////////////////
@@ -155,34 +229,34 @@ Jesus = J = (function () {
         }
     }
 
-    //Hmmmm
-    function tell (vars) {
-
-        var script = document.currentScript,
-            el = script.parentElement,
-            type = el.dataset.type;
-
-        el.innerHTML = '';
-
-        switch (type) {
-
-            case 'template':
-
-                var template = el.innerHTML,
-                    name = el.dataset.name;
-
-                _templates[name] = template;
-                break;
-
-            case 'render':
-
-                //$.getJSON(el.dataset.url, function(data){
-                //    console.log(data);
-                //    el.RemoveClass('J').InnerHTML = render(vars.template, data);
-                //});
-                break;
-        }
-    }
+    // //Hmmmm
+    // function tell (vars) {
+    //
+    //     var script = document.currentScript,
+    //         el = script.parentElement,
+    //         type = el.dataset.type;
+    //
+    //     el.innerHTML = '';
+    //
+    //     switch (type) {
+    //
+    //         case 'template':
+    //
+    //             var template = el.innerHTML,
+    //                 name = el.dataset.name;
+    //
+    //             _templates[name] = template;
+    //             break;
+    //
+    //         case 'render':
+    //
+    //             //$.getJSON(el.dataset.url, function(data){
+    //             //    console.log(data);
+    //             //    el.RemoveClass('J').InnerHTML = render(vars.template, data);
+    //             //});
+    //             break;
+    //     }
+    // }
 
     // Element Prototype ////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////
@@ -230,8 +304,12 @@ Jesus = J = (function () {
 
         for(var i = 0; i < arguments.length; i++) {
 
-            if(arguments[i] === null || arguments[i] === this.null) continue;
-            this.appendChild(arguments[i]);
+            var arg = arguments[i];
+            if(arg === null || arg === this.null) continue;
+
+            arg = typeof arg == 'function' ? arg() : arg;
+
+            this.appendChild(arg);
         }
 
         return this;
@@ -315,12 +393,14 @@ Jesus = J = (function () {
             return _templates;
         }
     });
-    API.Q = API.pray = query;
+    API.query = API.pray = query;
     API.create = createElem;
+    API.array = array;
+    API.xhr = xhr;
     API.render = render;
     API.registerWidget = registerWidget;
     API.registerTemplate = registerTemplate;
-    API.tell = tell;
+    // API.tell = tell;
     API.addListener = events.addListener.bind(events);
     API.removeListener = events.removeListener.bind(events);
     API.fireEvent = events.fireEvent.bind(events);
@@ -328,48 +408,10 @@ Jesus = J = (function () {
     return API
 
 })();
-var Q = J.Q;
+
+var A = J.array;
 var C = J.create;
+var Q = J.query;
+var X = J.xhr;
 
-
-// var a = Jesus.create('div').Html('Mø').AddClass('ku')
-//     .Append(
-//         J.create('a').Html('Kjøttdeig'),
-//         J.create('a').Html('Biff'),
-//         J.create('a').Html('Burger')
-//             .Append(
-//                 J.create('span').Html(' Tilbud!')
-//             ),
-//         J.create('a').Html('Mørbrad')
-//     );
-
-
-// E.create('div',{class:'lol'}).append(
-//
-//     function () {
-//         var elements = [];
-//         for (var i = 0; i < 10; i++) {
-//             elements.push(E.create(
-//                     a, {href: '#'}
-//                 ).Html('i')
-//             )
-//         }
-//         return elements;
-//     }
-//
-// );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ar.Html('yoo');
